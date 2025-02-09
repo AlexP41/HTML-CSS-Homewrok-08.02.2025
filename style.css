@@ -1,0 +1,68 @@
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /* MAIN COLOR: #1c7ed6
+      Grey color: #343a40
+      */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  font-size: 16px;
+}
+
+h1 {
+
+  margin-bottom: 48px;
+  margin-top: 30px;
+  font-size: 24px;
+  margin-left: 48px;
+}
+
+.row-of-movies-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-bottom: 48px
+}
+
+.movie-card {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-template-rows: 1fr;
+}
+
+.movie-img {
+  grid-row: 1 / -1;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: #1c7ed6;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
